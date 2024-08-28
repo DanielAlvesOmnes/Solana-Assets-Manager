@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Connection, PublicKey, SystemProgram, Transaction, LAMPORTS_PER_SOL } from '@solana/web3.js';
-import Modal from '../../PrivateKeyModal'; // Import your Modal component
+import Modal from '../../PrivateKeyModal';
 
 const Transfer = () => {
   const [recipient, setRecipient] = useState('');
@@ -40,8 +40,8 @@ const Transfer = () => {
   };
 
   const handleSubmitFromModal = (keypair) => {
-    handleTransfer(keypair); // Call the handleTransfer function when the modal form is submitted
-    setShowModal(false); // Close the modal after submitting
+    handleTransfer(keypair);
+    setShowModal(false);
   };
 
   return (
