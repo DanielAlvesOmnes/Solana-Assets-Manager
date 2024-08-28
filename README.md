@@ -1,8 +1,26 @@
+Solana Asset Management
+
+This project is a simple application for managing assets on the Solana blockchain, built using Next.js. It allows you to interact with the Solana blockchain to manage and track assets in a decentralized manner.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+Solana CLI Setup
+
+To work with Solana's blockchain, you'll need to set up a personal Solana testnet cluster on your local machine. This can be done using the Solana CLI.
+
+1 - Install Solana CLI (if you haven't already):
+
+sh -c "$(curl -sSfL https://release.solana.com/v1.14.10/install)"
+
+2 - Start a local Solana test validator:
+
+solana-test-validator
+
+This command will start a local Solana cluster, which is necessary to simulate transactions and test your application.
+
+Then, run the development server:
 
 ```bash
 npm run dev
