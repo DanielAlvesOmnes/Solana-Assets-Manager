@@ -7,7 +7,6 @@ import Footer from './src/components/Footer';
 import Modal from './src/components/Modal';
 
 export default function Home() {
-  const [userPublicKey, setUserPublicKey] = useState('');
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleFooterButtonClick = () => {
@@ -22,9 +21,9 @@ export default function Home() {
   return (
     <div className="min-h-full">
       <Navbar />
-      <Header setUserPublicKey={setUserPublicKey} />
+      <Header />
       <main>
-        <MainContent userPublicKey={userPublicKey} />
+        <MainContent />
       </main>
       <Footer onButtonClick={handleFooterButtonClick} />
       <Modal isOpen={isModalOpen} onClose={handleCloseModal} title="Generate Key Pair">

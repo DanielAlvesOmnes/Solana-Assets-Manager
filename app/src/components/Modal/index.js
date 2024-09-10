@@ -1,4 +1,3 @@
-// src/components/Modal.js
 import React from 'react';
 import { Keypair } from '@solana/web3.js';
 
